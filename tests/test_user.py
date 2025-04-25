@@ -63,7 +63,7 @@ def test_create_user_with_invalid_email():
 
 
 def test_delete_user():
-    '''Удаление пользователя'''
+    #Удаление пользователя
     test_user = {
         'id': 999,
         'name': 'Test User',

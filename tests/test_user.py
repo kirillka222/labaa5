@@ -44,7 +44,7 @@ def test_create_user_with_valid_email():
     assert response.status_code == 201
     assert response.json() == new_user['id']
 
-    # Проверяем, что пользователь действительно создан
+    ## Проверяем, что пользователь действительно создан
     response = client.get("/api/v1/user", params={'email': new_user['email']})
     assert response.status_code == 200
     assert response.json() == new_user
